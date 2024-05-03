@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-##############################################################
-# To count for the frequency dispersion of the sinusoidal wave
-##############################################################
+###################################################################
+# To count for the frequency dispersion of the stable signal (1 Hz)
+###################################################################
 
 import emd
 import numpy as np
