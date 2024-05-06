@@ -1,6 +1,6 @@
-####################################################################################
-# To plot all the freq dispersion recorded in the hdf5 file (10000 trails recorded)
-####################################################################################
+############################################################
+# To plot all the freq dispersion recorded in the hdf5 file
+############################################################
 
 import numpy as np
 import matplotlib.pyplot as plt
