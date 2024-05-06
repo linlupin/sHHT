@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-###################################################################
-# To count for the frequency dispersion of the stable signal (1 Hz)
-###################################################################
+##############################################################
+# To count for the frequency dispersion of the sinusoidal wave
+##############################################################
 
 import emd
 import numpy as np
@@ -44,8 +44,8 @@ smooth = np.zeros( len(t) )  # To smooth the obtained IF
 Ofreq_disp =  np.zeros( len(t) )     # Frequency dispersion between the IF1 and real signal frequency (@ 1Hz) 
 freq_disp =  np.zeros( len(t) )      # Frequency dispersion ratio between IF2 and IF1  
 dfreq_disp =  np.zeros( len(t) )     # Frequency dispersion between the IF2 and IF1
-nfreq_disp =  np.zeros( len(t) )     # Frequency dispersion ratio between IF2 and real signal frequency (@ 1Hz)
-ndfreq_disp =  np.zeros( len(t) )    # Frequency dispersion between the IF2 and real signal frequency (@ 1Hz)
+nfreq_disp =  np.zeros( len(t) )     # Frequency dispersion ratio between IF2 and real signal IF (@ 1Hz)
+ndfreq_disp =  np.zeros( len(t) )    # Frequency dispersion between the IF2 and real signal IF (@ 1Hz)
 # mean value of the freq_disp 
 mfreq_disp =  np.zeros( (len(amp), len(input_noise_level)) )
 # mean value of the dfreq_disp
@@ -214,8 +214,8 @@ f1["SNR"] = amp/data_noise_level     # original SNR of the data
 f1["INL"] = input_noise_level        # input noise level to perform sHHT
 f1["FD_sHHT"] = mdfreq_disp          # Frequency dispersion between IF2 and IF1
 f1["dFD_sHHT"] = mfreq_disp          # Frequency dispersion ratio between IF2 and IF1
-f1["RFD_sHHT"] = nmdfreq_disp        # Frequency dispersion between IF2 and real signal frequency
-f1["RdFD_sHHT"] = nmfreq_disp        # Frequency dispersion ratio between IF2 and real signal frequency
+f1["RFD_sHHT"] = nmdfreq_disp        # Frequency dispersion between IF2 and real IF of the signal
+f1["RdFD_sHHT"] = nmfreq_disp        # Frequency dispersion ratio between IF2 and real IF of signal
 
 ff.close()
 
