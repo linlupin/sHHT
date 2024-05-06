@@ -29,7 +29,7 @@ ind = 0                  # index to count for the simulation loop
 
 t=np.arange(0,10,0.01)       # Time from 0 - 10 sec
 freq=pow(2,0.1*t)            # frequency = 2^{0.1*t}  
-rfreq=pow(2,0.1*t)*(1+0.1*t*math.log(2))   # d(freq*t)/dt
+rfreq=pow(2,0.1*t)*(1+0.1*t*math.log(2))   # d(freq*t)/dt ; IF of the original signal
 omega=2.0*np.pi*freq         # Angular Frequency
 # SNR of one data can be treated as "amp/data_noise_level"
 amp=np.arange(1.0,101.0,1.0) # Amplitude level(range) of the signal
@@ -42,11 +42,11 @@ sample_rate=1/(t[1]-t[0])     # Sampling rate
 OSF = np.zeros( len(t) )      # instantaneous frequency obtained from conventional HHT (IF1)
 SSF = np.zeros( len(t) )      # instantaneous frequency obtained from sHHT (IF2)
 smooth = np.zeros( len(t) )   # To smooth the obtained IF
-Ofreq_disp =  np.zeros( len(t) )   # Frequency dispersion between the IF1 and real signal frequency
+Ofreq_disp =  np.zeros( len(t) )   # Frequency dispersion between the IF1 and real signal IF
 freq_disp =  np.zeros( len(t) )    # Frequency dispersion ratio between IF2 and IF1
 dfreq_disp =  np.zeros( len(t) )   # Frequency dispersion between the IF2 and IF1
-nfreq_disp =  np.zeros( len(t) )   # Frequency dispersion ratio between IF2 and real signal frequency
-ndfreq_disp =  np.zeros( len(t) )  # Frequency dispersion between the IF2 and real signal frequency
+nfreq_disp =  np.zeros( len(t) )   # Frequency dispersion ratio between IF2 and real signal IF
+ndfreq_disp =  np.zeros( len(t) )  # Frequency dispersion between the IF2 and real signal IF
 # standard deviation of the freq_disp
 sfreq_disp =  np.zeros( (len(amp), len(input_noise_level)) )
 # mean value of the freq_disp
@@ -218,8 +218,8 @@ f1["SNR"] = amp/data_noise_level   # original SNR of the data
 f1["INL"] = input_noise_level      # input noise level to perform sHHT
 f1["FD_sHHT"] = mdfreq_disp        # Frequency dispersion between IF2 and IF1
 f1["dFD_sHHT"] = mfreq_disp        # Frequency dispersion ratio between IF2 and IF1
-f1["RFD_sHHT"] = nmdfreq_disp      # Frequency dispersion between the IF2 and real signal frequency
-f1["RdFD_sHHT"] = nmfreq_disp      # Frequency dispersion ratio between IF2 and real signal frequency
+f1["RFD_sHHT"] = nmdfreq_disp      # Frequency dispersion between the IF2 and real IF of the signal
+f1["RdFD_sHHT"] = nmfreq_disp      # Frequency dispersion ratio between IF2 and real IF of the signal
 
 ff.close()
 
