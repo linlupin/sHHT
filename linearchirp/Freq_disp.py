@@ -27,7 +27,7 @@ fmax=3.0
 ind = 0                   # index to count for the simulation loop
 
 t=np.arange(0,10,0.01)   # Time from 0 - 10 sec
-freq=0.1*(t+fmin)        # Frequency of the original signal = 0.1*(t+0.01)
+freq=0.1*(t+fmin)        # 0.1*(t+0.01); Real frequency of the signal is d(frequency*t)/dt 
 rfreq=0.1*2*t+fmin*0.1   # d(freq*t)/dt = d (0.1t^2+fmin*0.1*t)/ dt = 0.2*t + fmin*0.1 ; IF of the original signal
 omega=2.0*np.pi*freq     
 # SNR of one data can be treated as "amp/data_noise_level"
