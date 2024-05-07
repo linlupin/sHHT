@@ -7,7 +7,7 @@ Our codes to perform the sHHT are based on the [EMD package 0.6.2](https://emd.r
 Here we can compare the conventional HHT with EEMD and sHHT using the following two flow charts.
 ![shht](https://github.com/linlupin/sHHT/blob/main/sHHT.png) 
 
-In our investigations, we considered the stationary signal @ 1 Hz and chirp signals in linear and lograrithmic behavior. We assume a sinusoidal signal of sin(2πft) while f=0.1*(t+0.01) for a linear chirp signal and f=2^{0.1*t} for a logarithmic chirp signal.   
+In our investigations, we considered the stationary signal @ 1 Hz and chirp signals in linear and lograrithmic behavior. We assume a sinusoidal signal of sin(2πft) while f=0.1*(t+0.01) for a linear chirp signal and f=2^{0.1*t} for a exponential chirp signal.   
 
 
 
