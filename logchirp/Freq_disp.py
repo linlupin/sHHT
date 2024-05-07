@@ -28,7 +28,7 @@ fmax=5.0
 ind = 0                  # index to count for the simulation loop
 
 t=np.arange(0,10,0.01)       # Time from 0 - 10 sec
-freq=pow(2,0.1*t)            # frequency = 2^{0.1*t}  
+freq=pow(2,0.1*t)            # 2^{0.1*t}; Real frequency of the signal is d(freq*t)/dt   
 rfreq=pow(2,0.1*t)*(1+0.1*t*math.log(2))   # d(freq*t)/dt ; IF of the original signal
 omega=2.0*np.pi*freq         # Angular Frequency
 # SNR of one data can be treated as "amp/data_noise_level"
