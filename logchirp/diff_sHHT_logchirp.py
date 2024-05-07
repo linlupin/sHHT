@@ -30,7 +30,7 @@ fmin=0.01                                  # frequency range: 0.01 - 5 Hz
 fmax=5.0
 
 t=np.arange(0,10,0.01)
-freq=pow(2,0.1*t)                          # frequency of logarithmic chirp signal - 2^(0.1*t)
+freq=pow(2,0.1*t)                          # Real frequency of the signal = d(freq*t)/dt
 rfreq=pow(2,0.1*t)*(1+0.1*t*math.log(2))   # d(freq*t)/dt  (IF of the real signal)
 omega=2.0*np.pi*freq                       # Angluar frequency
 
