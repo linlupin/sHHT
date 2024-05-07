@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-##################################################################
-# To count for the frequency dispersion of the linear chirp signal
-##################################################################
+########################################################################
+# To count for the frequency dispersion of the exponential chirp signal
+########################################################################
 
 import emd
 import numpy as np
