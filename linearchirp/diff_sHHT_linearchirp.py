@@ -30,7 +30,7 @@ fmin=0.01                                   # frequency range: 0.01 - 3 Hz
 fmax=3.0
 
 t=np.arange(0,10,0.01)
-freq=0.1*(t+fmin)                           # frequency of linear chirp signal
+freq=0.1*(t+fmin)                           # Real frequency of the signal = d(freq*t)/dt
 rfreq=0.2*t+fmin*0.1                        # d(freq*t)/dt (IF of the real signal)  
 omega=2.0*np.pi*freq                        # Angluar frequency
 
