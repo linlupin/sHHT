@@ -1,5 +1,5 @@
 ###############################################################################
-# To count for the IF of traditional HHT and sHHT of a logarithmic chirp signal
+# To count for the IF of traditional HHT and sHHT of a exponential chirp signal
 ###############################################################################
 
 import emd
