@@ -16,6 +16,6 @@ In our investigations, we considered a stationary signal @ 1 Hz and chirp signal
 The GW folder includes the codes to deal with the data reduction of the gravitational wave (GW) data and to present the GW signal on the stacked Hilbert spectra. There are 4 files including in this folder:  
 +  ***GW190814.ipynb***: Google Jupyter notebook to deal with the reduction of GW190814 strain data. The Q-transform plot is also included.  
 +  ***GW200129.ipynb***: Google Jupyter notebook to deal with the reduction of GW200129_065458 strain data. The Q-transform plot is also included.  
-More details on the data reduction of GW events can be referred to the tutorial resource provided by Gravitational Wave Open Science Center [GWOSC](https://colab.research.google.com/github/gw-odw/). (One can choose the tutorial resources from the latest ODW to practice)
-+ ***GW_sHHT_lv.py***:  
-+ ***GW_sHHT.py***:   
+More details about the data reduction of GW events can be referred to the tutorial resource provided by Gravitational Wave Open Science Center [GWOSC](https://colab.research.google.com/github/gw-odw/). (One can choose the tutorial resources from the latest ODW to practice)
++ ***GW_sHHT_lv.py***: To present the stacked Hilbert spectra of a specific GW event generated with different input noiselevels. One can fix a specific level to gain the best visual plot to generate the stacked Hilbert spectrum using the following code.     
++ ***GW_sHHT.py***: To present the stacked Hilbert spectra of a specific GW event generated with a specific input noise level.  
