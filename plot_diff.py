@@ -9,7 +9,7 @@ from scipy import ndimage
 
 f = h5py.File("sin_disp.hdf5", "r")                 # To read the data with a stable signal
 #f = h5py.File("linearchirp_disp.hdf5", "r")        # To read the data with a linear chirp signal
-#f = h5py.File("logchirp_disp.hdf5", "r")           # To read the data with a logarithmic chirp signal
+#f = h5py.File("expchirp_disp.hdf5", "r")           # To read the data with a exponential chirp signal
 SNR = f['/info/SNR'][()]                            # Internal SNR of the original data
 input_noise_level = f['/info/INL'][()]              # Input noise level to generate the sHHT
 rfreq = f['/info/rfreq'][()]                        # IF of the original signal
