@@ -8,10 +8,10 @@ Here we can compare the conventional HHT with EEMD and sHHT using the following 
 ![shht](https://github.com/linlupin/sHHT/blob/main/sHHT.png) 
 
 In our investigations, we considered a stationary signal @ 1 Hz and chirp signals in linear and exponential behavior. We assume a sinusoidal function of sin(2πft) while f=0.1*(t+0.01) to simulate a linear chirp signal and f=2^{0.1*t} to simulate an exponential chirp signal. The `stationary`, `linearchirp` and `expchirp` folders are used to denote codes to inverstigate the signal of corresponding behaviors, respectively. Each folder has following 3 codes:  
-Freq_disp.py: To investigate the frequency disperison variation between the frequency of the real signal and the instantaneous frequency (IF) determined by sHHT following the change of different input noise levels and internal data SNRs.  
-plot_disp2.py: To plot the data stored by Freq_disp.py.  
-diff_sHHT_xxx.py: To examine the relation of the real signal frequency, IF determined by conventional HHT (IF1) and sHHT (IF2). `xxx` denotes the behavior of the signal.  
-plot_diff.py in the root folder is used to plot the result stored by diff_sHHT_xxx.py.  
+1. ***Freq_disp.py***: To investigate the frequency disperison variation between the frequency of the real signal and the instantaneous frequency (IF) determined by sHHT following the change of different input noise levels and internal data SNRs.  
+2. ***plot_disp2.py***: To plot the data stored by Freq_disp.py.  
+3. ***diff_sHHT_xxx.py***: To examine the relation of the real signal frequency, IF determined by conventional HHT (IF1) and sHHT (IF2). `xxx` denotes the behavior of the signal.  
+***plot_diff.py*** in the root folder is used to plot the result stored by diff_sHHT_xxx.py.  
 The GW folder includes the codes to deal with the data reduction of the gravitational wave (GW) data and to present the GW signal on the stacked Hilbert spectra. There are 4 files including in this folder:  
-GW190814.ipynb:  
-GW200129.ipynb:   
+1. ***GW190814.ipynb***:  
+2. ***GW200129.ipynb***:   
